@@ -1,0 +1,24 @@
+# Formatting
+--header //===----------------------------------------------------------------------===//\n//\n// This source file is part of the Renkon open source project\n//\n// Copyright (c) {year} Unsigned Apps Pty Ltd. and the Renkon project authors\n// Licensed under the MIT License\n//\n// See LICENSE.txt for license information\n//\n// SPDX-License-Identifier: MIT\n//\n//===----------------------------------------------------------------------===//
+--self init-only
+--semicolons never
+--funcattributes prev-line
+--typeattributes prev-line
+--varattributes prev-line
+
+# Disabling default rules
+--disable consecutiveBlankLines
+--disable consecutiveSpaces
+--disable spaceInsideBrackets
+--disable wrap
+--disable blankLinesAtEndOfScope
+--disable blankLinesAtStartOfScope
+
+# Enabling optional rules
+--enable blankLinesBetweenImports
+--enable blockComments
+--enable isEmpty
+--enable wrapConditionalBodies
+
+# Ignoring source copied from other projects
+--exclude Sources/Renkon/Toolbox/RenkonDuration.swift,Sources/Renkon/Toolbox/HTTPMethod+HasBody.swift
