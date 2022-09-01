@@ -51,9 +51,6 @@ struct ScenarioDetail: View {
         }
         .navigationSplitViewColumnWidth(min: 180, ideal: 420)
         .navigationTitle("Scenario Name")
-        .navigationDestination(for: Endpoint.Identifier.self) {
-            EndpointDetail(endpointID: $0)
-        }
 #if os(macOS)
         .navigationSubtitle("Scenario")
 #else

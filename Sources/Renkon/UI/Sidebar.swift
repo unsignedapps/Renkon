@@ -37,12 +37,9 @@ struct Sidebar: View {
                 }
             }
         }
+        .listStyle(.sidebar)
         .navigationSplitViewColumnWidth(min: 180, ideal: 280)
         .searchable(text: $searchTerm)
-        .listStyle(.sidebar)
-        .navigationDestination(for: Scenario.Identifier.self) {
-            ScenarioDetail(scenarioID: $0)
-        }
     }
 
 }
