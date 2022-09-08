@@ -18,6 +18,7 @@ let package = Package(
 
     products: [
         .library(name: "Renkon", targets: ["Renkon"]),
+        .library(name: "RenkonUI", targets: ["RenkonUI"]),
         .executable(name: "renkon-demo", targets: [ "Demo" ]),
     ],
 
@@ -48,6 +49,13 @@ let package = Package(
             name: "RenkonTests",
             dependencies: [
                 "Renkon",
+            ]
+        ),
+
+        .target(
+            name: "RenkonUI",
+            dependencies: [
+                .targetItem(name: "Renkon", condition: nil)
             ]
         ),
 

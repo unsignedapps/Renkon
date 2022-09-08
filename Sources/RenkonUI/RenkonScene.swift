@@ -11,6 +11,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+import Renkon
 import SwiftUI
 
 /// A scene to display a Renkon UI.
